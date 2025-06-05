@@ -1463,5 +1463,11 @@ body{
   }
 }
 
+.break-fix {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
 
 
