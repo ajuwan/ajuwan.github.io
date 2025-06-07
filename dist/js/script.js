@@ -55,3 +55,20 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
     darkToggle.checked = false;
 }
     
+ function toggleSelengkapnya(event) {
+    event.preventDefault(); // biar gak lompat ke atas
+
+    const lanjutan = document.getElementById("lanjutanTeks");
+    const link = document.getElementById("bacaLink");
+    const dots = document.getElementById("dots");
+
+    if (lanjutan.classList.contains("hidden")) {
+      lanjutan.classList.remove("hidden");
+      link.innerText = "Sembunyikan";
+      dots.classList.add("hidden");
+    } else {
+      lanjutan.classList.add("hidden");
+      link.innerText = "Baca Selengkapnya";
+      dots.classList.remove("hidden");
+    }
+  }
